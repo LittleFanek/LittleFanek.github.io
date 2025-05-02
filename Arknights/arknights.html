@@ -11,27 +11,120 @@
             document.body.style.backgroundAttachment = 'fixed';
         });
     </script>
+    <style>
+        .toggle-btn {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            z-index: 9999;
+            background: #2196f3;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            font-size: 24px;
+            box-shadow: 0 2px 8px #2196f388;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .toggle-btn:hover {
+            background: #1769aa;
+        }
+        .toggle-links {
+            transition: opacity 0.3s;
+        }
+        .toggle-links.hide {
+            opacity: 0;
+            pointer-events: none;
+            height: 0;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-	<main>
-		<p align="center" style="background: #2196f3; color: #fff; font-weight: bold; border-radius: 8px; box-shadow: 0 2px 8px #2196f388; padding: 10px 0; margin: 16px 0;">
-			<a href="https://wiki.biligame.com/arknights/%E5%85%AC%E5%BC%80%E6%8B%9B%E5%8B%9F%E5%B7%A5%E5%85%B7" style="color: #fff; text-decoration: none;">公开招募工具</a>
-		</p>
-		<p align="center" style="background: #ff9800; color: #fff; font-weight: bold; border-radius: 8px; box-shadow: 0 2px 8px #ff980088; padding: 10px 0; margin: 16px 0;">
-			<a href="https://prts.wiki/w/%E5%85%AC%E6%8B%9B%E8%AE%A1%E7%AE%97" style="color: #fff; text-decoration: none;">公开招募计算 PRTS</a>
-		</p>
-		<p align="center" style="background: #4caf50; color: #fff; font-weight: bold; border-radius: 8px; box-shadow: 0 2px 8px #4caf5088; padding: 10px 0; margin: 16px 0;">
-			<a href="https://wiki.biligame.com/arknights/%E5%B9%B2%E5%91%98%E5%AF%BB%E8%AE%BF%E6%A8%A1%E6%8B%9F%E5%99%A8" style="color: #fff; text-decoration: none;">干员寻访模拟器</a>
-		</p>
-		<p align="center"><a href="https://prts.wiki/w/%E5%8D%A1%E6%B1%A0%E4%B8%80%E8%A7%88">干员寻访模拟 PRTS</a></p>
-		<p align="center"><a href="https://wiki.biligame.com/arknights/%E5%B9%B2%E5%91%98%E5%85%BB%E6%88%90%E8%AE%A1%E7%AE%97">干员养成计算</a></p>
-		<p align="center"><a href="https://wiki.biligame.com/arknights/%E5%B9%B2%E5%91%98%E4%B8%80%E8%A7%88">干员图鉴</a></p>
-		<p align="center"><a href="https://prts.wiki/w/%E5%B9%B2%E5%91%98%E4%B8%80%E8%A7%88">干员图鉴 PRTS</a></p>
-		<p align="center"><a href="https://ak.hypergryph.com/user/home">官服个人中心</a></p>
-		<p align="center"><a href="https://ak.hypergryph.com/user/exchangeGift">官服礼包兑换</a></p>
-		<p align="center"><a href="https://ak.hypergryph.com/user/inquiryGacha">官服干员寻访纪录</a></p>
-		<p align="center"><a href="https://space.bilibili.com/161775300?spm_id_from=333.337.0.0">bilibili官方主页</a></p>
-		<p align="center"><a href="https://gamer.qq.com/v2/cloudgame/game/95278/usz2n4umt6pww2t8">云游戏</a></p>
-	</main>
+    <main>
+        <div id="toggleLinks" class="toggle-links">
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://wiki.biligame.com/arknights/%E5%85%AC%E5%BC%80%E6%8B%9B%E5%8B%9F%E5%B7%A5%E5%85%B7"
+                   style="display:inline-block; min-width:80px; background:#2196f3; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #2196f388; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    公开招募
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://prts.wiki/w/%E5%85%AC%E6%8B%9B%E8%AE%A1%E7%AE%97"
+                   style="display:inline-block; min-width:80px; background:#ff9800; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #ff980088; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    公招PRTS
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://wiki.biligame.com/arknights/%E5%B9%B2%E5%91%98%E5%AF%BB%E8%AE%BF%E6%A8%A1%E6%8B%9F%E5%99%A8"
+                   style="display:inline-block; min-width:80px; background:#4caf50; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #4caf5088; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    寻访模拟
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://prts.wiki/w/%E5%8D%A1%E6%B1%A0%E4%B8%80%E8%A7%88"
+                   style="display:inline-block; min-width:80px; background:#00bcd4; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #00bcd488; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    寻访PRTS
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://wiki.biligame.com/arknights/%E5%B9%B2%E5%91%98%E5%85%BB%E6%88%90%E8%AE%A1%E7%AE%97"
+                   style="display:inline-block; min-width:80px; background:#9c27b0; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #9c27b088; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    养成计算
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://wiki.biligame.com/arknights/%E5%B9%B2%E5%91%98%E4%B8%80%E8%A7%88"
+                   style="display:inline-block; min-width:80px; background:#607d8b; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #607d8b88; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    图鉴
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://prts.wiki/w/%E5%B9%B2%E5%91%98%E4%B8%80%E8%A7%88"
+                   style="display:inline-block; min-width:80px; background:#795548; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #79554888; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    图鉴PRTS
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://ak.hypergryph.com/user/home"
+                   style="display:inline-block; min-width:80px; background:#607d8b; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #607d8b88; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    个人中心
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://ak.hypergryph.com/user/exchangeGift"
+                   style="display:inline-block; min-width:80px; background:#e91e63; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #e91e6388; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    礼包兑换
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://ak.hypergryph.com/user/inquiryGacha"
+                   style="display:inline-block; min-width:80px; background:#3f51b5; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #3f51b588; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    寻访纪录
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://space.bilibili.com/161775300?spm_id_from=333.337.0.0"
+                   style="display:inline-block; min-width:80px; background:#00a1d6; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #00a1d688; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    b站主页
+                </a>
+            </p>
+            <p align="center" style="margin: 12px 0;">
+                <a href="https://gamer.qq.com/v2/cloudgame/game/95278/usz2n4umt6pww2t8"
+                   style="display:inline-block; min-width:80px; background:#009688; color:#fff; font-weight:bold; border-radius:6px; box-shadow:0 2px 8px #00968888; padding:6px 10px; text-decoration:none; font-size:15px;">
+                    云游戏
+                </a>
+            </p>
+        </div>
+        <button class="toggle-btn" onclick="toggleLinks()" title="显示/隐藏工具">☰</button>
+        <script>
+            function toggleLinks() {
+                var links = document.getElementById('toggleLinks');
+                links.classList.toggle('hide');
+            }
+        </script>
+    </main>
 </body>
 </html>
