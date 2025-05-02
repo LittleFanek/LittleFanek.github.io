@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <head>
 	<title>明日方舟实用工具导航</title>
+	<script>
+        const imgCount = 6; // 修改为你实际的图片数量
+        const imgIndex = Math.floor(Math.random() * imgCount) + 1;
+        const bgUrl = `Bmg/${imgIndex}.jpg`;
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.backgroundImage = `url('${bgUrl}')`;
+            document.body.style.backgroundSize = '100%';
+            document.body.style.backgroundAttachment = 'fixed';
+        });
+    </script>
 </head>
-<body background="Backimg.jpg"style="background-size:100%;background-attachment: fixed;">
+<body>
 	<main>
 		<p align="center"><a href="https://wiki.biligame.com/arknights/%E5%85%AC%E5%BC%80%E6%8B%9B%E5%8B%9F%E5%B7%A5%E5%85%B7">公开招募工具</a></p>
 		<p align="center"><a href="https://prts.wiki/w/%E5%85%AC%E6%8B%9B%E8%AE%A1%E7%AE%97">公开招募计算 PRTS</a></p>
