@@ -2,8 +2,22 @@
 <html lang="zh-cn">
 <head>
     <title>随机大头</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        body {
+            min-height: 100vh;
+            min-width: 100vw;
+            background-repeat: no-repeat;
+        }
+    </style>
     <script>
-        const imgCount =1;
+        const imgCount = 1;
         const imgIndex = Math.floor(Math.random() * imgCount) + 1;
         const bgUrl = `Head/${imgIndex}.jpg`;
         document.addEventListener('DOMContentLoaded', function() {
