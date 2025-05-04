@@ -1,47 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简化页面</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        header {
-            background-color: #22aee6;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>随机大头</title>
+    <script>
+        const imgCount =1;
+        const imgIndex = Math.floor(Math.random() * imgCount) + 1;
+        const bgUrl = `Head/${imgIndex}.jpg`;
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.backgroundImage = `url('${bgUrl}')`;
+            document.body.style.backgroundSize = 'cover';
+            document.body.style.backgroundAttachment = 'fixed';
+            document.body.style.backgroundPosition = 'center center';
+        });
+    </script>
 </head>
-<body>
-    <header>
-        <h1>欢迎来到简化页面</h1>
-    </header>
-    <main>
-        <h2>关于我们</h2>
-        <p>这是一个简化的HTML页面模板，您可以根据需要添加内容。</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 简化页面</p>
-    </footer>
-</body>
 </html>
