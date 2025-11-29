@@ -1,0 +1,61 @@
+/* Contrast fixes to make important text more prominent */
+/* Keep selectors specific and use !important sparingly to avoid unintended overrides */
+
+/* General body text: darker for better readability on light backgrounds */
+body {
+  color: #1b1b1b;
+}
+
+/* Headings: stronger weight and darker color */
+h1, h2, h3, h4 {
+  color: #0e0e0e;
+  font-weight: 700;
+}
+
+/* Links: accent color and slightly bolder so they stand out */
+a {
+  color: rgb(34, 174, 230);
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Accent class used across site: keep bright and bold */
+.pubcc, .pubreadcc {
+  color: rgb(34, 174, 230) !important;
+  font-weight: 700;
+}
+
+/* Elements intended to be white-on-dark — force white for readability */
+.ctras_cc, .wt_ftcc {
+  color: #ffffff !important;
+}
+
+/* Ensure black text class remains readable on light backgrounds */
+.bk_ftcc {
+  color: #111111 !important;
+  font-weight: 600;
+}
+
+/* Footer / small text increase contrast */
+#mypublic_bottom_edit, #mypublic_bottom_edit p, #mypublic_bottom_edit a {
+  color: #ffffff;
+}
+
+/* Buttons and labels that need emphasis */
+.std_btn, .pubbtnbg, .pubbtnline {
+  font-weight: 700;
+}
+
+/* Small utility: high-contrast center text */
+.high-contrast {
+  color: #0b0b0b;
+  font-weight: 700;
+}
+
+/* Mobile tweaks: keep tappable text visible */
+@media (max-width: 700px) {
+  a, button, .std_btn { font-weight: 700; }
+}
