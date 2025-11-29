@@ -534,7 +534,10 @@ html {
 		 	}
 		 }
 </style>    
-  </head> 
+    </style>
+        <!-- Extra animations: non-destructive styles used to add entry/hover effects -->
+        <link rel="stylesheet" href="./css/extra-animations.css">
+    </head> 
 <body class="cc_bgcc hf-dark" data-skip-type="0" data-bd_bgtype="bggdcc">
        <div id="preloader" class="myjsloader">
         <div class="loader" id="loader-1"></div>
@@ -965,109 +968,7 @@ html {
  <script src="./js/lazyload.min.js?31"></script>
   
     
-  <script>
-      $(function(){
-         //编辑模式下 
-         $('#preloader').fadeOut();
-        var my_pop_ope = new sl.app.my_pop_ope();
-	my_pop_ope.bind_event();
-
-        $('.js_up_totop').on('click',function(event) {
-          event.preventDefault();
-          $('html, body').animate({
-            scrollTop: 0
-          }, 600);
-          return false;
-        });
-        
-        $('#navbox').onePageNav();
-        $(window).on('scroll', function() {
-            if ($(window).scrollTop() > 80) {
-                $('.leftsaidtit').show();
-            } else {
-                $('.leftsaidtit').hide();
-            }
-        });
-        
-        $(".js_more_nav_show").hover(function(){
-           $(".jsmynavhide").show();
-        },function(){
-       //    $(".jsmynavhide").hide();
-        });
-        $(".jshidenavmore").hover(function(){
-           $(".jsmynavhide").hide();
-        },function(){
-           
-        });
-        $("#navbox").hover(function(){
-
-        },function(){
-           $(".jsmynavhide").hide();
-        });
-        setTimeout(function(){
-            $("[data-kui-anim]").css('opacity',1);
-        },10000);
-        
-        //公共js定位到模块
-        $('.nav_fixed_pos_bak').click(function(){
-            var tid=$(this).attr('href');
-            if($(tid).length==0||$(tid)==undefined){
-                return;
-            }
-            $('html, body').animate({
-              scrollTop: $(tid).offset().top
-            }, 600);
-        })  
-          
-    //   $.tip_reload();
-       var lazyLoadInstance = new LazyLoad({
-            // Your custom settings go here
-          });
-          
-       if($("#iconckbtbox").length>0){
-       	let iconckbtbox = document.querySelector("#iconckbtbox");
-           iconckbtbox.addEventListener("click",function(){
-               if( iconckbtbox.classList.contains("activecs")){
-               	iconckbtbox.classList.remove("activecs");
-               }else{
-               	iconckbtbox.classList.add("activecs");
-               }
-           });
-       }
-       
-          if (self != top) {
-        	  $(".beian_a").remove();
-        	  $(".js_user_report").remove();
-          }
-          
-          if($(".bold_hover").length>0){
-        	  var now_href=window.location.href;
-        	  now_href=now_href.replace(/^htt.+:\/\/[^\/]+\//, "/");
-        	  
-        	  $(".bold_hover").each(function(){
-        		 var this_href=$(this).attr('href');
-        		 this_href=this_href.replace(/^htt.+:\/\/[^\/]+\//, "/");
-        		 if(this_href==now_href){
-        			 var nowcc=$(this).css('color');
-        			 $(this).css('border-bottom','1px solid '+nowcc);
-        			 $(this).css('padding-bottom','2px');
-        		 } 
-        	  });
-          }
-          
-          if($(".myfksubnav[data-target_type='shopcar']").length>0){
-		  		var spcar_num=localStorage.getItem('spcar_num');
-		  		if(spcar_num!=''&&spcar_num!=undefined){
-		  			var tspcar=$(".myfksubnav[data-target_type='shopcar']");
-		  			var icon='';
-		  			if(tspcar.find('.myiconfont').length>0){
-		  				icon='<i class="'+tspcar.find('.myiconfont').attr('class')+'"></i>'
-		  			}
-			    	tspcar.html(icon+' '+tspcar.attr('data-role')+'('+spcar_num+')');
-		  		}
-		    }
-      });
-  </script>    
+     <!-- index.inline.js 将在页面底部加载以确保依赖先就绪 -->
   
   
   <!--bkoutend-->  
@@ -1122,58 +1023,13 @@ cursor: pointer;" class="iconfont iconup1 js_up_totop leftsaidtit">
 <script type="text/javascript"  src="./js/jquery.topmsg.js?31"></script>
 <script type="text/javascript" src="./js/mypub_open.js?55?31"></script>
 <script type="text/javascript" src="./js/myatc_user.js?12?3167"></script>
-<script type="text/javascript" src="./js/my_pop_ope.js?31"></script>
-<script type="text/javascript" src="./js/jquery.nicescroll.min.js?31"></script>
-
-
-
-<div style="height:2px;overflow:hidden;position:absolute;bottom:-10px;">
-</div>
-
-<script src="./js/mXdfvexpg.js?31"></script>
-<script type="text/javascript" src="./js/mypub_open.js?55?31"></script>
-<script src="./js/jquery-confirm.js?31"></script>
-<script src="./js/jquery.topmsg.js?31"></script>
-
-
 <script type="text/javascript" src="./js/myopen_user.js?2abcd?31y7"></script>
 
+<!-- 插入必要的依赖脚本，确保 index.inline.js 在依赖加载后执行 -->
+<script src="./js/jquery-confirm.js"></script>
+<script src="./js/my_pop_ope.js?31"></script>
+<script src="./js/index.inline.js"></script>
 
-<script type="text/javascript">
-	$(function(){	
-		$('.js-myet-pop').click(function(){	
-			$.alert('<img src="'+$(this).attr('data-my-pop-src')+'">');
-		});
-	});
-</script>
-
-
-
-
-	<script type="text/javascript">
-		$(function(){
-			$.get('/home/mockup/view_add/id/21401_829ecdd1-1743825255',{'at':easyh5s()},function(d){
-			});
-		});
-	</script>
-
-
-
-<script type="text/javascript">
-	$(function(){
-		setTimeout(function(){
-			$('.myjsloader').hide();
-		},6000);
-	});
-</script>
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?202986558bd48615268c869e124ee763";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
+<!-- 内联脚本已全部迁移到 ./js/index.inline.js -->
+<script src="./js/animations.js"></script>
 </html>
