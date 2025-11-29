@@ -59,3 +59,19 @@ a:hover, a:focus {
 @media (max-width: 700px) {
   a, button, .std_btn { font-weight: 700; }
 }
+
+/* Specific highlights for feature items */
+lhz[data-id="21401_bk_119494_tt_1"],
+lhz[data-id="21401_bk_119494_tt_2"],
+lhz[data-id="21401_bk_119494_tt_3"] {
+  color: rgb(34, 174, 230) !important;
+  font-weight: 800;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.06);
+  letter-spacing: 0.2px;
+}
+
+/* If the text is wrapped in span inside lhz, target that too */
+lhz[data-id="21401_bk_119494_tt_2"] span {
+  color: inherit;
+  font-weight: inherit;
+}
