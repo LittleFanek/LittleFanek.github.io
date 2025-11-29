@@ -1,0 +1,91 @@
+/* HF Blue-Black Theme */
+body.hf-dark{
+  --hf-bg:#071028; /* very dark navy */
+  --hf-bg-2:#0b1530;
+  --hf-surface:#0f1a2a;
+  --hf-accent:#22AAE6; /* blue accent */
+  --hf-muted:#9fb6c8;
+  color: #d7eaf6;
+  background: linear-gradient(180deg,var(--hf-bg), var(--hf-bg-2)) !important;
+  background-attachment: fixed !important;
+}
+
+body.hf-dark .container, body.hf-dark .inneritemstd, body.hf-dark .inneritemstd2, body.hf-dark .inneritemstd3, body.hf-dark .inneritemstd4{
+  background: rgba(6,11,20,0.45);
+  color: inherit;
+}
+
+/* Accent color overrides */
+body.hf-dark .pubcc, body.hf-dark .pubreadcc, body.hf-dark .pubbtnbg, body.hf-dark .pubbdcc, body.hf-dark .pubbtnline, body.hf-dark .pubbtnsdcc{
+  color: var(--hf-accent) !important;
+  background-color: transparent !important;
+  border-color: var(--hf-accent) !important;
+}
+
+body.hf-dark .pubbtnbg, body.hf-dark .pubbtnbg:hover{
+  background-color: var(--hf-accent) !important;
+  color: #041024 !important;
+}
+
+body.hf-dark .pubbtnwtbg{
+  background-color: rgba(255,255,255,0.06) !important;
+  color: var(--hf-muted) !important;
+}
+
+body.hf-dark .navbox, body.hf-dark .navbox .nav_items{
+  background: transparent !important;
+  color: #e6f7ff !important;
+}
+
+body.hf-dark .navboxcc .current, body.hf-dark .nav_item_hover:hover, body.hf-dark .nav_item_act{
+  background-color: var(--hf-accent) !important;
+  color: #041024 !important;
+}
+
+/* Buttons & badges */
+body.hf-dark .std_btn{
+  background-color: transparent;
+  border-color: rgba(255,255,255,0.06);
+  color: var(--hf-accent);
+}
+
+/* Headings */
+body.hf-dark h1, body.hf-dark h2, body.hf-dark h3, body.hf-dark h4{
+  color: #f6fbff;
+}
+
+/* Links */
+body.hf-dark a{
+  color: var(--hf-accent) !important;
+}
+
+/* Cards and surfaces */
+body.hf-dark .mybdlineintro, body.hf-dark .mybdlineintroflash{
+  background: rgba(255,255,255,0.02);
+}
+
+/* Swiper and controls */
+body.hf-dark .swiper-pagination-bullet-active{
+  background: var(--hf-accent) !important;
+}
+body.hf-dark .swiper-button-next, body.hf-dark .swiper-button-prev{
+  color: var(--hf-accent) !important;
+}
+
+/* Minor tweaks */
+body.hf-dark .boxdivborder{
+  background-color:#0b1220;
+  color:var(--hf-muted);
+}
+
+/* Force high-contrast where necessary */
+body.hf-dark .wt_ftcc{ color:#fff !important; }
+body.hf-dark .bk_ftcc{ color:#000 !important; }
+
+/* Ensure preloader blends */
+body.hf-dark #preloader .loader{ border-top-color: var(--hf-accent) !important; }
+
+/* Small screens adjustments */
+@media (max-width:700px){
+  body.hf-dark .navitemsbox{ background: rgba(10,14,24,0.6) !important; }
+}

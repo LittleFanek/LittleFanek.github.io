@@ -3,6 +3,7 @@
 <head>
     <title>随机大头</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Stylesheet" type="text/css" href="./css/hf-theme.css" />
     <style>
         html, body {
             height: 100%;
@@ -21,6 +22,7 @@
         const imgIndex = Math.floor(Math.random() * imgCount) + 1;
         const bgUrl = `head/${imgIndex}.jpg`;
         document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('hf-dark');
             document.body.style.backgroundImage = `url('${bgUrl}')`;
             document.body.style.backgroundSize = 'cover';
             document.body.style.backgroundAttachment = 'fixed';
@@ -28,4 +30,5 @@
         });
     </script>
 </head>
+</html>
 </html>
