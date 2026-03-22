@@ -7,8 +7,8 @@
     <link rel="icon" href="assets/img/hf.ico" type="image/x-icon">
     <style>
         body {
-            background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%); /* 渐变背景 */
-            color: #dda0dd; /* 浅紫色文字 */
+            background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #001122 100%); /* 添加蓝色渐变 */
+            color: #87ceeb; /* 天蓝色文字 */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
@@ -16,23 +16,23 @@
             overflow-x: hidden; /* 防止水平滚动 */
         }
         header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%); /* 渐变背景 */
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #003366 100%); /* 添加蓝色渐变 */
             padding: 40px 20px; /* 增加内边距 */
             text-align: center;
-            border-bottom: 3px solid #ee82ee;
-            box-shadow: 0 4px 20px rgba(238, 130, 238, 0.3); /* 添加阴影 */
+            border-bottom: 3px solid #4169e1;
+            box-shadow: 0 4px 20px rgba(65, 105, 225, 0.3); /* 添加阴影 */
             animation: fadeInDown 1s ease-out;
         }
         header h1 {
             margin: 0;
-            color: #ee82ee;
+            color: #4169e1;
             font-size: 3em; /* 增大字体 */
-            text-shadow: 0 2px 10px rgba(238, 130, 238, 0.5); /* 添加文字阴影 */
+            text-shadow: 0 2px 10px rgba(65, 105, 225, 0.5); /* 添加文字阴影 */
         }
         header p {
             margin: 10px 0 0;
             font-size: 1.2em;
-            color: #dda0dd;
+            color: #87ceeb;
             animation: fadeIn 1.5s ease-out 0.5s both;
         }
         main {
@@ -50,12 +50,12 @@
             animation: fadeInUp 1s ease-out 1s both;
         }
         .client-recommendation {
-            background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%); /* 渐变背景 */
-            border: 2px solid #dda0dd; /* 更粗边框 */
+            background: linear-gradient(135deg, #1a1a1a 0%, #252525 50%, #004080 100%); /* 添加蓝色渐变 */
+            border: 2px solid #87ceeb; /* 天蓝色边框 */
             padding: 30px;
             border-radius: 12px;
             margin-bottom: 100px; /* 进一步增加底部间距 */
-            box-shadow: 0 8px 30px rgba(221, 160, 221, 0.2);
+            box-shadow: 0 8px 30px rgba(135, 206, 235, 0.2);
             animation: fadeInUp 1s ease-out 1.2s both;
         }
         .advantages-section {
@@ -66,14 +66,14 @@
             color: #f7e4ff;
             font-size: 2rem;
             margin-bottom: 16px;
-            border-left: 4px solid #ee82ee;
+            border-left: 4px solid #4169e1;
             padding-left: 12px;
             text-transform: uppercase;
             letter-spacing: 0.05em;
         }
         .section-content {
-            background: linear-gradient(135deg, #151515 0%, #1f1f1f 100%);
-            border: 1px solid #8a2be2;
+            background: linear-gradient(135deg, #151515 0%, #1f1f1f 50%, #002244 100%);
+            border: 1px solid #4682b4;
             border-radius: 12px;
             padding: 24px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.45);
@@ -84,11 +84,11 @@
             gap: 24px; /* 网格间距 */
         }
         .advantage {
-            background: linear-gradient(135deg, #1a1a1a 0%, #252525 100%); /* 渐变背景 */
-            border: 1px solid #dda0dd; /* 浅紫色边框 */
+            background: linear-gradient(135deg, #1a1a1a 0%, #252525 50%, #003d4d 100%); /* 添加蓝色渐变 */
+            border: 1px solid #87ceeb; /* 天蓝色边框 */
             padding: 20px; /* 内边距 */
             border-radius: 10px;
-            box-shadow: 0 6px 24px rgba(221, 160, 221, 0.22);
+            box-shadow: 0 6px 24px rgba(135, 206, 235, 0.22);
             transition: transform 0.25s ease, box-shadow 0.25s ease;
             animation: fadeInUp 0.8s ease-out both;
         }
@@ -100,26 +100,28 @@
         .advantage:nth-child(6) { animation-delay: 2.6s; }
         .advantage:hover {
             transform: translateY(-10px) scale(1.02); /* 增强悬停效果 */
-            box-shadow: 0 8px 25px rgba(221, 160, 221, 0.4);
+            box-shadow: 0 8px 25px rgba(135, 206, 235, 0.4);
         }
         .advantage h3 {
-            color: #ee82ee;
+            color: #4169e1;
             margin-top: 0;
         }
         footer {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%); /* 渐变背景 */
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #003366 100%); /* 添加蓝色渐变 */
             padding: 30px; /* 增加内边距 */
             text-align: center;
-            border-top: 3px solid #ee82ee;
+            border-top: 3px solid #4169e1;
             margin-top: 80px; /* 增加顶部间距 */
-            box-shadow: 0 -4px 20px rgba(238, 130, 238, 0.3);
+            box-shadow: 0 -4px 20px rgba(65, 105, 225, 0.3);
             animation: fadeIn 1s ease-out 2.8s both;
         }
         a {
             color: #daa520; /* 金色链接 */
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         a:hover {
+            color: #ffd700; /* 更亮的金色 */
             text-decoration: underline;
         }
         /* 音乐控制按钮样式 */
@@ -136,20 +138,21 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: #1a1a1a;
-            border: 1px solid #dda0dd;
-            color: #dda0dd;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border: 1px solid #87ceeb;
+            color: #87ceeb;
             font-size: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
             animation: fadeIn 1s ease-out 3s both;
         }
         .music-controls button:hover {
-            background: #2a2a2a;
+            background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
             transform: scale(1.1);
         }
         .music-controls button:active {
             transform: scale(0.95); /* 点击动画 */
+            background: linear-gradient(135deg, #003366 0%, #004080 100%);
         }
         .volume-control {
             display: flex;
@@ -158,8 +161,8 @@
         }
         .volume-control input[type="range"] {
             width: 80px;
-            background: #1a1a1a;
-            border: 1px solid #dda0dd;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border: 1px solid #87ceeb;
             border-radius: 5px;
             height: 5px;
         }
@@ -167,7 +170,7 @@
             -webkit-appearance: none;
             width: 15px;
             height: 15px;
-            background: #dda0dd;
+            background: linear-gradient(135deg, #87ceeb 0%, #4169e1 100%);
             border-radius: 50%;
             cursor: pointer;
         }
@@ -236,7 +239,7 @@
         }
         .spinner {
             border: 4px solid #1a1a1a;
-            border-top: 4px solid #ee82ee;
+            border-top: 4px solid #4169e1;
             border-radius: 50%;
             width: 50px;
             height: 50px;
@@ -321,10 +324,12 @@
         <button id="play-pause" title="播放/暂停">▶</button>
         <button id="next" title="下一曲">⏭</button>
         <div class="volume-control">
-            <span style="color: #dda0dd; font-size: 16px;">音量</span>
+            <span style="color: #dda0dd; font-size: 16px;">🔊</span>
             <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5" title="音量调节">
         </div>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/music.js"></script>
+    <script src="assets/js/scroll.js"></script>
 </body>
 </html>
