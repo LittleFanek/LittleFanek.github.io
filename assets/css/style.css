@@ -1,36 +1,36 @@
         body {
-            background: linear-gradient(135deg, #000000 0%, #0a0a0a 50%, #001122 100%); /* 添加蓝色渐变 */
-            color: #87ceeb; /* 天蓝色文字 */
+            background: linear-gradient(135deg, #ffffff 0%, #f0f8ff 50%, #e6f3ff 100%); /* 明亮的白色到浅蓝渐变 */
+            color: #333333; /* 深色文字 */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 2.0; /* 增加行间距 */
+            line-height: 1.8; /* 调整行间距 */
             overflow-x: hidden; /* 防止水平滚动 */
         }
         header {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #003366 100%); /* 添加蓝色渐变 */
-            padding: 40px 20px; /* 增加内边距 */
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 50%, #1e5f99 100%); /* 专业蓝色渐变 */
+            padding: 50px 20px; /* 增加内边距 */
             text-align: center;
-            border-bottom: 3px solid #4169e1;
-            box-shadow: 0 4px 20px rgba(65, 105, 225, 0.3); /* 添加阴影 */
+            border-bottom: 3px solid #ff6b35; /* 橙色强调 */
+            box-shadow: 0 4px 20px rgba(74, 144, 226, 0.3); /* 调整阴影 */
             animation: fadeInDown 1s ease-out;
         }
         header h1 {
             margin: 0;
-            color: #4169e1;
-            font-size: 3em; /* 增大字体 */
-            text-shadow: 0 2px 10px rgba(65, 105, 225, 0.5); /* 添加文字阴影 */
+            color: #ffffff; /* 白色文字 */
+            font-size: 3.5em; /* 增大字体 */
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.5); /* 白色文字阴影 */
         }
         header p {
             margin: 10px 0 0;
-            font-size: 1.2em;
-            color: #87ceeb;
+            font-size: 1.4em;
+            color: #e0f7fa; /* 浅蓝文字 */
             animation: fadeIn 1.5s ease-out 0.5s both;
         }
         main {
             max-width: 1400px; /* 增大宽度 */
             margin: 0 auto;
-            padding: 40px; /* 增加内边距 */
+            padding: 50px; /* 增加内边距 */
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 1s ease, transform 1s ease;
@@ -38,16 +38,16 @@
         .intro {
             text-align: center;
             margin-bottom: 80px; /* 增加底部间距 */
-            font-size: 1.3em;
+            font-size: 1.4em;
             animation: fadeInUp 1s ease-out 1s both;
         }
         .client-recommendation {
-            background: linear-gradient(135deg, #1a1a1a 0%, #252525 50%, #004080 100%); /* 添加蓝色渐变 */
-            border: 2px solid #87ceeb; /* 天蓝色边框 */
-            padding: 30px;
-            border-radius: 12px;
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 50%, #ffd700 100%); /* 明亮的黄色渐变 */
+            border: 2px solid #ff6b35; /* 橙色边框 */
+            padding: 35px;
+            border-radius: 15px;
             margin-bottom: 100px; /* 进一步增加底部间距 */
-            box-shadow: 0 8px 30px rgba(135, 206, 235, 0.2);
+            box-shadow: 0 8px 30px rgba(255, 107, 53, 0.2);
             animation: fadeInUp 1s ease-out 1.2s both;
         }
         .advantages-section {
@@ -55,32 +55,32 @@
             animation: fadeInUp 1s ease-out 1.4s both;
         }
         .section-title {
-            color: #f7e4ff;
-            font-size: 2rem;
-            margin-bottom: 16px;
-            border-left: 4px solid #4169e1;
-            padding-left: 12px;
+            color: #ff6b35; /* 橙色标题 */
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            border-left: 5px solid #4a90e2; /* 蓝色左边框 */
+            padding-left: 15px;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
+            letter-spacing: 0.1em;
         }
         .section-content {
-            background: linear-gradient(135deg, #151515 0%, #1f1f1f 50%, #002244 100%);
-            border: 1px solid #4682b4;
-            border-radius: 12px;
-            padding: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+            background: #ffffff; /* 白色背景 */
+            border: 1px solid #ddd; /* 浅灰边框 */
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* 轻阴影 */
         }
         .advantages {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px; /* 网格间距 */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 调整最小宽度 */
+            gap: 30px; /* 增加网格间距 */
         }
         .advantage {
-            background: linear-gradient(135deg, #1a1a1a 0%, #252525 50%, #003d4d 100%); /* 添加蓝色渐变 */
-            border: 1px solid #87ceeb; /* 天蓝色边框 */
-            padding: 20px; /* 内边距 */
-            border-radius: 10px;
-            box-shadow: 0 6px 24px rgba(135, 206, 235, 0.22);
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%); /* 浅蓝渐变 */
+            border: 1px solid #2196f3; /* 蓝色边框 */
+            padding: 25px; /* 内边距 */
+            border-radius: 12px;
+            box-shadow: 0 6px 24px rgba(33, 150, 243, 0.15);
             transition: transform 0.25s ease, box-shadow 0.25s ease;
             animation: fadeInUp 0.8s ease-out both;
         }
@@ -92,28 +92,29 @@
         .advantage:nth-child(6) { animation-delay: 2.6s; }
         .advantage:hover {
             transform: translateY(-10px) scale(1.02); /* 增强悬停效果 */
-            box-shadow: 0 8px 25px rgba(135, 206, 235, 0.4);
+            box-shadow: 0 8px 25px rgba(33, 150, 243, 0.3);
         }
         .advantage h3 {
-            color: #4169e1;
+            color: #0d47a1; /* 深蓝标题 */
             margin-top: 0;
         }
         footer {
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #003366 100%); /* 添加蓝色渐变 */
-            padding: 30px; /* 增加内边距 */
+            background: linear-gradient(135deg, #4a90e2 0%, #357abd 50%, #1e5f99 100%); /* 专业蓝色渐变 */
+            padding: 40px; /* 增加内边距 */
             text-align: center;
-            border-top: 3px solid #4169e1;
+            border-top: 3px solid #ff6b35; /* 橙色边框 */
             margin-top: 80px; /* 增加顶部间距 */
-            box-shadow: 0 -4px 20px rgba(65, 105, 225, 0.3);
+            box-shadow: 0 -4px 20px rgba(74, 144, 226, 0.3);
             animation: fadeIn 1s ease-out 2.8s both;
+            color: #ffffff; /* 白色文字 */
         }
         a {
-            color: #daa520; /* 金色链接 */
+            color: #ff6b35; /* 橙色链接 */
             text-decoration: none;
             transition: color 0.3s ease;
         }
         a:hover {
-            color: #ffd700; /* 更亮的金色 */
+            color: #e65100; /* 深橙色 */
             text-decoration: underline;
         }
         /* 音乐控制按钮样式 */
@@ -130,21 +131,21 @@
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-            border: 1px solid #87ceeb;
-            color: #87ceeb;
+            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%); /* 白色渐变 */
+            border: 1px solid #ff6b35; /* 橙色边框 */
+            color: #ff6b35; /* 橙色文字 */
             font-size: 20px;
             cursor: pointer;
             transition: all 0.3s ease;
             animation: fadeIn 1s ease-out 3s both;
         }
         .music-controls button:hover {
-            background: linear-gradient(135deg, #2a2a2a 0%, #3a3a3a 100%);
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
             transform: scale(1.1);
         }
         .music-controls button:active {
             transform: scale(0.95); /* 点击动画 */
-            background: linear-gradient(135deg, #003366 0%, #004080 100%);
+            background: linear-gradient(135deg, #ff6b35 0%, #e65100 100%); /* 橙色渐变 */
         }
         .volume-control {
             display: flex;
@@ -153,8 +154,8 @@
         }
         .volume-control input[type="range"] {
             width: 80px;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-            border: 1px solid #87ceeb;
+            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
+            border: 1px solid #ff6b35;
             border-radius: 5px;
             height: 5px;
         }
@@ -162,45 +163,45 @@
             -webkit-appearance: none;
             width: 15px;
             height: 15px;
-            background: linear-gradient(135deg, #87ceeb 0%, #4169e1 100%);
+            background: linear-gradient(135deg, #ff6b35 0%, #e65100 100%);
             border-radius: 50%;
             cursor: pointer;
         }
         /* 移动端适配 */
         @media (max-width: 768px) {
             body {
-                line-height: 1.8;
+                line-height: 1.6;
             }
             header {
-                padding: 30px 15px;
+                padding: 40px 15px;
             }
             header h1 {
-                font-size: 2.2em;
+                font-size: 2.5em;
             }
             header p {
-                font-size: 1em;
+                font-size: 1.1em;
             }
             main {
-                padding: 20px 15px;
+                padding: 30px 15px;
             }
             .intro {
-                font-size: 1.1em;
-                margin-bottom: 50px;
+                font-size: 1.2em;
+                margin-bottom: 60px;
             }
             .client-recommendation {
-                padding: 20px;
-                margin-bottom: 60px;
+                padding: 25px;
+                margin-bottom: 70px;
             }
             .advantages {
                 grid-template-columns: 1fr; /* 单列 */
-                gap: 20px;
+                gap: 25px;
             }
             .advantage {
-                padding: 20px;
+                padding: 25px;
             }
             footer {
-                padding: 20px;
-                margin-top: 50px;
+                padding: 30px;
+                margin-top: 60px;
             }
             .music-controls {
                 bottom: 10px;
@@ -208,12 +209,12 @@
                 gap: 5px;
             }
             .music-controls button {
-                width: 40px;
-                height: 40px;
-                font-size: 16px;
+                width: 45px;
+                height: 45px;
+                font-size: 18px;
             }
             .volume-control input[type="range"] {
-                width: 60px;
+                width: 70px;
             }
         }
         /* 加载动画样式 */
@@ -223,15 +224,15 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #000000;
+            background-color: #ffffff; /* 白色背景 */
             z-index: 9999;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .spinner {
-            border: 4px solid #1a1a1a;
-            border-top: 4px solid #4169e1;
+            border: 4px solid #f0f0f0;
+            border-top: 4px solid #ff6b35; /* 橙色 */
             border-radius: 50%;
             width: 50px;
             height: 50px;
